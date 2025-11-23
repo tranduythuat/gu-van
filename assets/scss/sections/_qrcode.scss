@@ -1,0 +1,35 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+.qrcode {
+    width: 100%;
+    .content {
+        width: 100%;
+        text-align: left;
+        padding: 0 10% 15%;
+        h2 {
+            font-size: 25px;
+            text-transform: uppercase;
+            margin-bottom: 5%;
+        }
+
+        .qr-btn {
+            display: block;
+            @include flex-center;
+            width: 35%;
+            padding: 2%;
+            background: #838484;
+            color: #000;
+            border: none;
+            border-radius: 15px;
+            font-weight: 300;
+            font-size: 12px;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: background 0.3s ease;
+            margin-top: 3%;
+            text-decoration: none;
+        }
+    }
+}

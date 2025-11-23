@@ -72,4 +72,16 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   const btn = document.getElementById('player-btn');
   btn.addEventListener('click', toggleMusic);
+
+  const qrcode = document.getElementById('qr-btn');
+  qrcode.addEventListener("click", toggleQR);
+
+  function toggleQR(e) {
+      e.preventDefault();
+      Swal.fire({
+          title: "",
+          text: "국민 506-502-0438-6633",
+          confirmButtonColor: "#000"
+      });
+  }
 });
