@@ -149,8 +149,8 @@ header {
 
 .hero {
   width: 100%;
-  aspect-ratio: 500/824;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(255, 196, 145, 0.259)), url("https://yenstudio.info.vn/gu-van/1.jpg") no-repeat 0% 100%/cover;
+  aspect-ratio: 500/930;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(47, 34, 22, 0.259)), url("https://yenstudio.info.vn/gu-van/1.jpg") no-repeat 46% 60%/150%;
 }
 .hero .content {
   width: 100%;
@@ -245,7 +245,7 @@ header {
 .invitation .content .image-box {
   width: 100%;
   aspect-ratio: 500/812;
-  background: linear-gradient(to bottom, #e8e6d9, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("https://yenstudio.info.vn/gu-van/2.jpg") no-repeat 48% 100%/cover;
+  background: linear-gradient(to bottom, #e8e6d9, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("https://yenstudio.info.vn/gu-van/2.jpg") no-repeat 66% 100%/cover;
 }
 .invitation .content .image-box h2 {
   font-family: "1FTVBlushingRose", sans-serif;
