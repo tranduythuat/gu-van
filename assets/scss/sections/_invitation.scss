@@ -49,6 +49,9 @@
                     font-weight: 300;
                     letter-spacing: 2px;
                 }
+                .divider-couple {
+                    font-size: 20px;
+                }
                 p.role {
                     font-size: 11px;
                 }
@@ -104,6 +107,9 @@
                     h2 {
                         font-size: calc((26 / 500) * 100vw);  
                         letter-spacing: calc((2 / 500) * 100vw);  
+                    }
+                    .divider-couple {
+                        font-size: calc((20 / 500) * 100vw);
                     }
                     p.role {
                         font-size: calc((11 / 500) * 100vw);  
