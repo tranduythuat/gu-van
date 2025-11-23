@@ -84,4 +84,73 @@ document.addEventListener("DOMContentLoaded", () => {
           confirmButtonColor: "#000"
       });
   }
+
+  async function handleFormSubmit(e) {
+    e.preventDefault();
+
+    const form = e.target;
+    const formData = new FormData(form);
+    const data = Object.fromEntries(formData.entries());
+    console.log("🚀 ~ handleFormSubmit ~ data:", data);
+
+    const {
+      name: name,
+      confirm: confirm
+    } = data;
+    console.log("🚀 ~ handleFormSubmit 2~ data:", data);
+
+    // Thông báo khi bắt đầu gửi
+    Swal.fire({
+      title: '전송 중 ...',
+      text: "잠시만 기다려 주세요",
+      icon: "info",
+      allowOutsideClick: false,
+      didOpen: () => {
+        Swal.showLoading();
+      },
+    });
+
+    const url = "https://script.google.com/macros/s/AKfycbwhBuNO6S1DC2XCDe8qKp8lccTSvBK_NLqhH1j81FpUAd1__vdd48-wQOSng6H8udHaGg/exec?sheet=confirm";
+
+    try {
+      const res = await fetch(url, {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams({
+          name,
+          confirm,
+        }),
+      });
+
+      const result = await res.json().catch(() => ({}));
+      console.log("Server response:", result);
+
+      form.reset();
+
+      // Thông báo thành công
+      Swal.fire({
+        title: "성공!",
+        text: "답장을 보내주셔서 감사합니다, 정보는 신랑신부에게 전달되었어요",
+        icon: "success",
+        confirmButtonText: "OK",
+        confirmButtonColor: "#000",
+      });
+    } catch (error) {
+      console.error("Error:", error);
+
+      // Thông báo lỗi
+      Swal.fire({
+        title: "Lỗi!",
+        text: "OPPS! Something went wrong: " + error.message,
+        icon: "error",
+        confirmButtonText: "Try again.",
+        confirmButtonColor: "#000",
+      });
+    }
+  }
+
+  const form = document.forms["rsvpForm"];
+  if (form) {
+    form.addEventListener("submit", (e) => handleFormSubmit(e));
+  }
 });
