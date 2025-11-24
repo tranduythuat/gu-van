@@ -150,7 +150,7 @@ header {
 .hero {
   width: 100%;
   aspect-ratio: 500/930;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(47, 34, 22, 0.259), rgba(0, 0, 0, 0)), url("https://yenstudio.info.vn/gu-van/1.jpg") no-repeat 46% 60%/150%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(47, 34, 22, 0.259), rgba(0, 0, 0, 0)), url("https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/gu-van/1.jpg") no-repeat 46% 60%/150%;
 }
 .hero .content {
   width: 100%;
@@ -248,7 +248,7 @@ header {
 .invitation .content .image-box {
   width: 100%;
   aspect-ratio: 500/812;
-  background: linear-gradient(to bottom, #e8e6d9, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("https://yenstudio.info.vn/gu-van/2.jpg") no-repeat 66% 100%/cover;
+  background: linear-gradient(to bottom, #e8e6d9, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/gu-van/2.jpg") no-repeat 66% 100%/cover;
 }
 .invitation .content .image-box h2 {
   font-family: "1FTVBlushingRose", sans-serif;
@@ -432,7 +432,7 @@ header {
 .location .content .image-block {
   width: 100%;
   aspect-ratio: 500/748;
-  background: url("https://yenstudio.info.vn/gu-van/3.jpg") no-repeat center/cover;
+  background: url("https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/gu-van/3.jpg") no-repeat center/cover;
   margin-top: 15%;
 }
 @media (max-width: 500px) {
@@ -628,7 +628,7 @@ header {
 .end {
   width: 100%;
   aspect-ratio: 500/810;
-  background: url("https://yenstudio.info.vn/gu-van/5.jpg") no-repeat 100% 100%/cover;
+  background: url("https://pub-d341ea7ec201435598469d75d8c4a056.r2.dev/gu-van/5.jpg") no-repeat 100% 100%/cover;
   justify-content: end;
 }
 .end .content {
